@@ -90,6 +90,7 @@ const user = {
     },
     wx_login(req, res) {
         let create_time = getTimeDate(new Date())
+
         let password = ""
         for (let index = 0; index < 15; index++) {
             password += parseInt(Math.random() * 10)
